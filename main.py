@@ -144,6 +144,10 @@ def process_card():
 
     return jsonify({"result": result})
 
+@app.route("/ping")
+def ping():
+    return "OK", 200
+
 
 if __name__ == "__main__":
     import os
